@@ -1,3 +1,4 @@
+import React from "react"
 import "./Locations.css"
 
 class Locations extends React.Component {

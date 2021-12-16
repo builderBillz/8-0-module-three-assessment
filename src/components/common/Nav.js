@@ -5,22 +5,22 @@ function Nav () {
     return (
       <nav>
         <article>
-          <h1>
             <Link to="/">
-                <img src='https://ghiblicollection.com/media_cache/userFiles/uploads/Home%20Page/optimized/max2000/Mononoke-Hero-Desktop.jpg' alt="Splash." />
+                <img src='https://ghiblicollection.com/media_cache/userFiles/uploads/Home%20Page/optimized/max2000/Mononoke-Hero-Desktop.jpg' alt="Princess Mononoke" />
             </Link>
-          </h1>
         </article>
-        {/* <aside>
-          <ul>
-            <li>
-              <Link to="/staff">All Staff</Link>
-            </li>
-            <li>
+        <article>
+          <Link to="/movies"><h2>Movies</h2></Link>    
+        </article>
+        <article> 
+          <Link to="/people"><h2>People</h2></Link> 
+        </article>              
+        <article>
+          <Link to="/locations"><h2>Locations</h2></Link>    
+        </article>              
+            {/* <li>
               <Link to="/pets">All Pets</Link>
-            </li>
-          </ul>
-        </aside> */}
+            </li> */}
       </nav>
     );
   };
