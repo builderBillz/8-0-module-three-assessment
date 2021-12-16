@@ -26,7 +26,7 @@ class People extends React.Component {
                 const currentSearch =this.state.currentSearch 
                 console.log(currentSearch)
                 console.log(people)
-                let match =people.filter((person)=> person.name.toLowerCase === currentSearch.toLowerCase)
+                let match =people.filter((person)=> person.name.toLowerCase() === currentSearch.toLowerCase())
                 console.log(match)
                 if(match.length > 0){
                  
@@ -35,6 +35,9 @@ class People extends React.Component {
                     this.setState({ name: match[0].name })
                     this.setState({ age: match[0].age })
                     this.setState({ gender: match[0].gender })
+                    this.setState({
+                        currentSearch: "",
+                    })
                     }
             
             })
